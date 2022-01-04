@@ -1,76 +1,42 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# AwesomeBooks
 
-> One paragraph statement about the project.
+This is a wesbite where you can add and remove books.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./assets/screenshots/screenshot.PNG)
 
-Additional description about the project and its features.
+This project is my portfolio.
 
 ## Built With
+- Javascript
+- HTML
+- CSS
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo](https://mugishasam123.github.io/awesomebooks/)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
+To get the content of this project locally you need to run this command in your terminal:
+- git clone your https://github.com/matovu-farid/My-Portfolio.git
+- cd project My-Portfolio
+- open the index.html file to see project running.
 
 ### Deployment
-
-
-
+This project is deployed on a github page on the link below:
+- https://github.com/mugishasam123/awesomebooks.git
 ## Authors
 
-👤 **Author1**
+👤 **Matovu Farid Nkoba**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@matovu-farid](https://github.com/matovu-farid)
+- Twitter: [@matovu100](https://twitter.com/matovu100)
+- LinkedIn: [matovu-farid](https://www.linkedin.com/in/matovu-farid-48b80257)
 
-👤 **Author2**
+👤 **Mugisha Samuel**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+- GitHub: [@mugishasamuel](https://github.com/mugishasam123)
+- Twitter: [@mugishasamuel](https://twitter.com/mugishasamuel42/)
+- LinkedIn: [mugishasamuel](https://www.linkedin.com/in/mugisha-samuel-55a905208/)
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

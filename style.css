@@ -1,0 +1,22 @@
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form * {
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
