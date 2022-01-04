@@ -1,23 +1,22 @@
 class BookManager {
     constructor() {
-        let storageManager = new StrorageManager();
 
-        this.bookCollection = storageManager.retrieve() || [];
+        this.bookCollection = LocalStorageManager.retrieve() || [];
 
     }
-    saveToLocalStorage(bookCollection) {
-        const storageManager = new StorageManager(bookCollection);
+    saveToLocalStorage=(bookCollection)=> {
+        const storageManager = new LocalStorageManager(bookCollection);
         storageManager.save();
 
     }
 
 
-    rerender() {
+    rerender=()=> {
         const displayBooks = new DisplayBooks(bookManager.bookCollection);
         displayBooks.display();
 
     }
-    add(book) {
+    add=(book) =>{
         book.index = (this.bookCollection.length === 0) ? 0
             : this.bookCollection[this.bookCollection.length - 1].index + 1;
 
@@ -29,51 +28,60 @@ class BookManager {
 
 }
 
-class StrorageManager {
+class LocalStorageManager {
     constructor(bookCollection) {
         this.bookCollection = bookCollection;
     }
-    save() {
+    save=()=> {
         const stringObject = JSON.stringify(this.bookCollection);
         window.localStorage.setItem('books', stringObject);
     }
-    retrieve() {
+   static retrieve=()=> {
         const serializedObject = window.localStorage.getItem('books');
         const array = JSON.parse(serializedObject) || [];
         return array;
     }
 }
 
-class DisplayBooks {
-
-    constructor(bookCollection) {
-        this.bookCollection = bookCollection
-        this.bookListHtml = document.querySelector('.book-list');
-    }
-    clear() {
-        this.bookListHtml.innerHTML = '';
-    }
-    listHtml=(book) => ` 
+class ListHtml {
+    constructor(book){
+       this.html =  ` 
     <h3>${book.title}</h3>
     <h3>${book.author}</h3>
   <button id="${`button${book.index}`}">Remove</button>
-`;
+`
 
-    displayBook(book) {
-        let listInnerHtml = this.listHtml(book);
+    }
+}
 
+class DisplayBooks {
+
+    constructor(bookCollection) {
+        this.bookCollection = bookCollection;
+        const ulNode= document.querySelector('.book-list');
+        this.bookListHtml  = ulNode;
+    }
+    clear=()=> {
+        this.bookListHtml.innerHTML = '';
+    }
+    
+
+    displayBook=(book) =>{
+        
+        let listInnerHtml =(new ListHtml(book)).html;
+        console.log(listInnerHtml)
         const listNode = document.createElement('li');
 
         listNode.id = `book${book.index}`;
         listNode.innerHTML = listInnerHtml;
         listNode.appendChild(document.createElement('hr'));
-        bookListHtml.appendChild(listNode);
+        this.bookListHtml.appendChild(listNode);
     }
-    hideListItem(book) {
+    hideListItem=(book) =>{
         const li = document.querySelector(`#book${book.index}`);
         li.classList.add('hidden');
-    };
-    attachRemoveMethod(book) {
+    }
+    attachRemoveMethod=(book) =>{
         const button = document.querySelector(`#${`button${book.index}`}`);
         button.addEventListener('click', () => {
             this.bookCollection = this.bookCollection.filter((bookGot) => bookGot.index !== book.index);
@@ -81,11 +89,11 @@ class DisplayBooks {
             this.hideListItem(book);
         });
     }
-    saveToLocalStorage(bookCollection) {
-        let storageManager = new StrorageManager(bookCollection)
+    saveToLocalStorage=(bookCollection)=> {
+        let storageManager = new LocalStorageManager(bookCollection)
         storageManager.save();
     }
-    display() {
+    display=()=> {
         this.clear();
         this.bookCollection.forEach(this.displayBook);
         this.bookCollection.forEach(this.attachRemoveMethod);
