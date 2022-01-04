@@ -37,7 +37,6 @@ function attachRemoveMethod(book) {
   const button = document.querySelector(`#${`button${book.index}`}`);
 
   button.addEventListener('click', () => {
-   
     bookCollection = bookCollection.filter((bookGot) => bookGot.index !== book.index);
     saveToLocalStorage(bookCollection);
     hideListItem(book);

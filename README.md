@@ -9,7 +9,7 @@ This is a wesbite where you can add and remove books.
 This project is my portfolio.
 
 ## Built With
--Javascript
+- Javascript
 - HTML
 - CSS
 
@@ -29,6 +29,11 @@ This project is deployed on a github page on the link below:
 - Twitter: [@matovu100](https://twitter.com/matovu100)
 - LinkedIn: [matovu-farid](https://www.linkedin.com/in/matovu-farid-48b80257)
 
+👤 **Mugisha Samuel**
+
+- GitHub: [@mugishasamuel](https://github.com/mugishasam123)
+- Twitter: [@mugishasamuel](https://twitter.com/mugishasamuel42/)
+- LinkedIn: [mugishasamuel](https://www.linkedin.com/in/mugisha-samuel-55a905208/)
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
