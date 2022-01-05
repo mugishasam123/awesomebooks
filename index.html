@@ -8,34 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <p>Awesome books</p>
-      <ul>
-        <li>List</li>
-        <li>Add new</li>
-        <li>Contact</li>
+      <ul class="nav-list">
+        <li id="list">List</li>
+        <li id="add-new">Add new</li>
+        <li id="contact">Contact</li>
       </ul>
     </nav>
-    <p>March 19 2021,9:25:32PM</p>
+    <p id="date">March 19 2021,9:25:32PM</p>
     <header>
-      <h1>All awesome books</h1>
+      <h1 class="heading">All awesome books</h1>
     </header>
 
-    <section class="books-display">
+    <section class="books-display section">
       <ul class="book-list"></ul>
     </section>
-    <hr />
-    <section class="form-section">
+   
+    <section class="form-section section hidden">
       <form class="form">
-        <h3>Add a new book</h3>
+        <h3 class="heading">Add a new book</h3>
         <input type="text" name="title" placeholder="Title" />
         <input type="text" name="author" placeholder="Author" />
         <button type="submit">Add</button>
       </form>
     </section>
 
-    <section class="contact">
-      <h3>Contact information</h3>
+    <section class="contact section hidden">
+      <h3 class="heading">Contact information</h3>
       <p>
         Do have any questions or you just want to say"hello"?<br />you can reach
         out to us!
