@@ -9,6 +9,9 @@ class BookManager {
         storageManager.save();
 
     }
+    getFromLocalStorage=()=>   LocalStorageManager.retrieve();
+
+  
 
 
     rerender=()=> {
@@ -17,10 +20,13 @@ class BookManager {
 
     }
     add=(book) =>{
-        book.index = (this.bookCollection.length === 0) ? 0
-            : this.bookCollection[this.bookCollection.length - 1].index + 1;
+      let bookCollectionGot =  this.getFromLocalStorage();
+        book.index = (bookCollectionGot.length === 0) ? 0
+            : bookCollectionGot[bookCollectionGot.length - 1].index + 1;
 
-        this.bookCollection.push(book);
+
+        bookCollectionGot.push(book);
+        this.bookCollection = bookCollectionGot;
         this.rerender();
         this.saveToLocalStorage(this.bookCollection);
     }
