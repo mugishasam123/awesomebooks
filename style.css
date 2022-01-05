@@ -1,6 +1,7 @@
 body {
   font-weight: 800;
 }
+
 ul {
   padding-left: 0;
   width: 100%;
@@ -9,15 +10,16 @@ ul {
 
 ul li {
   list-style-type: none;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px;
 }
+
 ul li:nth-child(odd) {
-  background: #dddddd;
+  background: #ddd;
 }
+
 .tolu {
   width: 92px;
   height: 27px;
@@ -29,6 +31,7 @@ ul li:nth-child(odd) {
 .books-display {
   border: 3px solid;
 }
+
 hr {
   margin-top: 45px;
   width: 15%;
@@ -44,11 +47,13 @@ hr {
   margin-top: 45px;
   max-width: 200px;
 }
+
 .form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 header > h1 {
   text-align: center;
 }
@@ -57,13 +62,16 @@ header > h1 {
   margin: 10px 0;
   font-weight: 800;
 }
+
 form > input {
   width: 100%;
 }
+
 form > input,
 button {
   border: 3px solid;
 }
+
 form > button {
   box-shadow: 5px 5px black;
   padding: 2px 12px;
