@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Awesome Books</h1>
+      <h1>All awesome books</h1>
     </header>
-    
-    <section class="books-display">
-        <ul class="book-list">
-         
-        </ul>
-    </section>
-    <form class="form"  >
-        <input type="text" name="title" placeholder="Title">
-        <input type="text" name ="author"  placeholder="Author">
-        <button  type="submit">Add</button>
 
-    </form>
+    <section class="books-display">
+      <ul class="book-list"></ul>
+    </section>
+    <hr />
+    <section class="form-section">
+      <form class="form">
+        <h3>Add a new book</h3>
+        <input type="text" name="title" placeholder="Title" />
+        <input type="text" name="author" placeholder="Author" />
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
     <script type="module" src="index.js"></script>
-</body>
+  </body>
 </html>

@@ -18,7 +18,6 @@ export default class DisplayBooks {
 
       listNode.id = `book${book.index}`;
       listNode.innerHTML = listInnerHtml;
-      listNode.appendChild(document.createElement('hr'));
       this.bookListHtml.appendChild(listNode);
     }
 
