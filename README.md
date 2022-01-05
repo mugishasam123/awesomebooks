@@ -4,7 +4,7 @@
 
 This is a wesbite where you can add and remove books.
 
-![screenshot](./assets/screenshots/screenshot.png)
+![screenshot](./assets/screenshots/screenshot.PNG)
 
 This project is my portfolio.
 
