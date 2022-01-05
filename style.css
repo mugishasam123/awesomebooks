@@ -2,13 +2,17 @@ body {
   font-weight: 800;
 }
 
-ul {
+.book-list {
   padding-left: 0;
   width: 100%;
   margin: 0;
 }
 
-ul li {
+.nav li {
+  padding: 0 5px;
+}
+
+.book-list li {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -16,7 +20,7 @@ ul li {
   padding: 8px;
 }
 
-ul li:nth-child(odd) {
+.book-list li:nth-child(odd) {
   background: #ddd;
 }
 
@@ -30,13 +34,6 @@ ul li:nth-child(odd) {
 
 .books-display {
   border: 3px solid;
-}
-
-hr {
-  margin-top: 45px;
-  width: 15%;
-  height: 3px;
-  background-color: black;
 }
 
 .form {
@@ -63,6 +60,10 @@ header > h1 {
   font-weight: 800;
 }
 
+button {
+  cursor: pointer;
+}
+
 form > input {
   width: 100%;
 }
@@ -78,6 +79,53 @@ form > button {
   background-color: white;
   font-weight: 800;
   align-self: flex-end;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+}
+
+.nav > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0 5px;
+}
+
+.nav li:hover {
+  cursor: pointer;
+}
+
+.selected {
+  color: #45698a;
+}
+
+.nav li:nth-child(2) {
+  border-left: 2px solid #7892aa;
+  border-right: 2px solid #7892aa;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#date {
+  text-align: end;
+}
+
+.heading {
+  font-size: 28px;
 }
 
 .hidden {
