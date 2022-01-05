@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+.nav li {
+  padding: 0 5px;
+}
+
 .book-list li {
   list-style-type: none;
   display: flex;
@@ -77,23 +81,15 @@ form > button {
   align-self: flex-end;
 }
 
-
-
-
-
 .nav {
   display: flex;
   justify-content: space-between;
   border: 3px solid black;
 }
 
-.nav>ul {
+.nav > ul {
   display: flex;
   list-style-type: none;
-  padding: 0 5px;
-}
-
-.nav li {
   padding: 0 5px;
 }
 
@@ -101,12 +97,11 @@ form > button {
   cursor: pointer;
 }
 
-.selected{
-  
+.selected {
   color: #45698a;
 }
 
-.nav li:nth-child(2){
+.nav li:nth-child(2) {
   border-left: 2px solid #7892aa;
   border-right: 2px solid #7892aa;
 }
@@ -114,7 +109,9 @@ form > button {
 footer {
   border: 2px solid black;
   padding: 10px;
-  margin-top: 80px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .contact {
@@ -122,16 +119,15 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 #date {
   text-align: end;
 }
 
 .heading {
   font-size: 28px;
-  
 }
 
 .hidden {
   display: none;
 }
-
