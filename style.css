@@ -1,5 +1,13 @@
 body {
   font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.section {
+  flex: 1;
 }
 
 .book-list {
@@ -12,7 +20,7 @@ body {
   padding: 0 5px;
 }
 
-.book-list li {
+.bookItem {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -108,10 +116,12 @@ form > button {
 
 footer {
   border: 2px solid black;
-  padding: 10px;
-  position: absolute;
   width: 100%;
-  bottom: 0;
+  margin-top: 32px;
+}
+
+footer > p {
+  padding: 10px;
 }
 
 .contact {
