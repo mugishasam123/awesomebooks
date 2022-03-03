@@ -1,29 +1,58 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/AwesomeBooks-blueviolet)
 
 # AwesomeBooks
 
-This is a wesbite where you can add and remove books.
+>This is a wesbite where you can add and remove books.
 
 ![screenshot](./assets/screenshots/screenshot.PNG)
 
-This project is my portfolio.
-
-## Built With
-- Javascript
-- HTML
-- CSS
 
 [Live Demo](https://mugishasam123.github.io/awesomebooks/)
 
-## Getting Started
-To get the content of this project locally you need to run this command in your terminal:
-- git clone your https://github.com/matovu-farid/My-Portfolio.git
-- cd project My-Portfolio
-- open the index.html file to see project running.
 
-### Deployment
-This project is deployed on a github page on the link below:
-- https://github.com/mugishasam123/awesomebooks.git
+## Built With
+
+- Major languages (JavaScript)
+- Technologies/tools used 
+
+  
+  ``` bash
+ 
+  - Git(version control)
+  - ESLint(JavaScript linting)
+  - Stylelint(style linting)
+
+  ```
+
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+ - A text editor(preferably Visual Studio Code)
+### Install
+  -  [Git](https://git-scm.com/downloads)
+  -  [Node](https://nodejs.org/en/download/)
+### Usage
+#### Clone this repository
+
+```bash
+$ git clone https://github.com/mugishasam123/awesomebooks
+.git
+$ cd awesomebooks
+
+```
+#### Run project
+
+```bash
+$ npm install
+$ npm start # this will open it in the browser and enable hot reloading
+```
+
+  <br>
+
+
 ## Authors
 
 👤 **Matovu Farid Nkoba**
@@ -37,6 +66,23 @@ This project is deployed on a github page on the link below:
 - GitHub: [@mugishasamuel](https://github.com/mugishasam123)
 - Twitter: [@mugishasamuel](https://twitter.com/mugishasamuel42/)
 - LinkedIn: [mugishasamuel](https://www.linkedin.com/in/mugisha-samuel-55a905208/)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mugishasam123/awesomebooks/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
